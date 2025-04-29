@@ -233,11 +233,11 @@ export default function GameBoy() {
         >
           MUSIC
         </button>
-        <Link href="/github" className="block">
+        <Link href="/activity" className="block">
           <button 
             className="bg-red-500 text-white py-2 px-4 rounded shadow hover:bg-red-600 border-b-2 border-red-700 w-full"
           >
-            GITHUB
+            ACTIVITY
           </button>
           </Link>
       </div>
