@@ -24,3 +24,46 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Custom Scrollbar Styling */
+.bg-green-950::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bg-green-950::-webkit-scrollbar-track {
+  background: #2a2a2a; /* Warna latar belakang track scrollbar */
+}
+
+.bg-green-950::-webkit-scrollbar-thumb {
+  background: #4b9a2e; /* Warna thumb (pegangan) scrollbar */
+  border-radius: 10px;
+}
+
+.bg-green-950::-webkit-scrollbar-thumb:hover {
+  background: #7ad374; /* Warna thumb ketika hover */
+}
+
+
+/* Custom Scrollbar Styling */
+.bg-black::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bg-black::-webkit-scrollbar-track {
+  background: #0a0a0a; /* Warna track scrollbar */
+}
+
+.bg-black::-webkit-scrollbar-thumb {
+  background: #444; /* Warna thumb (pegangan) scrollbar */
+  border-radius: 10px;
+}
+
+.bg-black::-webkit-scrollbar-thumb:hover {
+  background: #666; /* Warna thumb saat hover */
+}
+
+/* Firefox support */
+.bg-black {
+  scrollbar-width: thin;
+  scrollbar-color: #444 #0a0a0a;
+}
