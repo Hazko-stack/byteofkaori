@@ -9,7 +9,6 @@ const screens = {
   HOME: 'home',
   MESSAGE: 'message',
   MUSIC: 'music',
-  TETRIS: 'tetris',
 };
 
 export default function GameBoy() {
@@ -18,7 +17,7 @@ export default function GameBoy() {
   const [messageIndex, setMessageIndex] = useState(0);
   
   const thoughtsOnLife = [
-    "A programmer is used to writing clean code, deploying logic into functions, and breaking problems down into manageable components.",
+    "A programmer usually writes clean code, deploying logic into functions, and breaking problems down into manageable components.",
     "But there are things that can't be handled with if-else statements, can't be rolled back, let alone git reverted. Feelings arise out of nowhere—without warnings, without exceptions—and when a crash happens, there's no stack trace to guide the way.",
     "He tries to refactor himself, removing dependencies on the past, but somehow, every time he runs, he returns to the same state—an infinite loop that never ends, as if constantly waiting to be executed with uncertain results",
     "Behind all the syntax highlighting and auto-complete, something feels different. Like variables beginning to connect in ways no parameter can explain",
@@ -122,22 +121,6 @@ export default function GameBoy() {
         );
       case screens.MUSIC:
         return <MusicScreen onHome={() => handleNavigate(screens.HOME)} />;
-      case screens.TETRIS:
-        return (
-          <div className="flex flex-col h-full">
-            <h2 className="screen-text text-xl mb-4">Tetris</h2>
-            <div className="screen-text text-center flex-grow">
-              [Tetris game would appear here]
-              <p className="mt-4">Press START to play</p>
-            </div>
-            <button 
-              onClick={() => handleNavigate(screens.HOME)}
-              className="w-full mt-2 py-1 bg-red-500 rounded"
-            >
-              HOME
-            </button>
-          </div>
-        );
       default:
         return null;
     }
@@ -250,12 +233,13 @@ export default function GameBoy() {
         >
           MUSIC
         </button>
-        <button 
-          className="bg-green-500 text-white py-2 px-4 rounded shadow hover:bg-green-600 border-b-2 border-green-700"
-          onClick={() => handleNavigate(screens.TETRIS)}
-        >
-          TETRIS
-        </button>
+        <Link href="/github" className="block">
+          <button 
+            className="bg-red-500 text-white py-2 px-4 rounded shadow hover:bg-red-600 border-b-2 border-red-700 w-full"
+          >
+            GITHUB
+          </button>
+          </Link>
       </div>
       
       {/* Select/Start buttons */}
