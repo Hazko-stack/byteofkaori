@@ -181,13 +181,13 @@ export default function Actifity({ onClose }) {
             rel="noopener noreferrer"
           >
             <button className="bg-yellow-500 text-black py-3 rounded-lg font-bold text-xl w-full transition-all hover:bg-yellow-600">
-              KUNJUNGI PROFIL
+              Visit Profile
             </button>
           </a>
 
           <Link href="/" className="block">
             <button className="bg-red-500 text-white py-3 rounded-lg font-bold text-xl w-full transition-all hover:bg-red-600" onClick={onClose}>
-              KEMBALI
+              BACK
             </button>
           </Link>
         </div>

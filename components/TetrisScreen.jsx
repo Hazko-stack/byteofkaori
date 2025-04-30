@@ -12,7 +12,7 @@ export default function TetrisScreen({ onHome }) {
         onClick={onHome}
         className="w-full mt-2 py-1 bg-red-500 rounded"
       >
-        KEMBALI
+        BACK
       </button>
     </div>
   );

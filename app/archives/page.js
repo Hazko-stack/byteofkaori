@@ -78,14 +78,14 @@ export default function Fullscreenarchives({ onClose }) {
               onClick={handleNext}
               disabled={currentPhotoIndex === photos.length - 1}
             >
-              SELANJUTNYA
+              NEXT
             </button>
            
         <Link href="/" className="block">
           <button
             className="bg-red-500 text-white py-3 rounded-lg font-bold text-xl w-full transition-all hover:bg-red-600 w-full"
           >
-            KEMBALI
+            BACK
           </button>
         </Link>
           </div>
